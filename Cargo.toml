@@ -1,0 +1,9 @@
+[package]
+name = "mouse-optimiser"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+enigo = "0.3"
+xcap = "0.5"
+image = "0.25"
