@@ -20,9 +20,8 @@ fn main() {
     loop {
         match sx.recv() {
             Ok(frame) => {
-                println!("Size: {:?}, {:?} {}", frame.width, frame.height, frame.raw.len());
+                println!("Size: {:?}x{:?}", frame.width, frame.height);
                 save_frame(&frame.raw, frame.width as usize, frame.height as usize);
-                println!("frame: {:?}", frame.width);
             }
             Err(e) => {
                 println!("Erreur: {:?}", e);
